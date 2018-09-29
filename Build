@@ -1,0 +1,15 @@
+#!/bin/bash
+
+###############################################################################
+#	Building General/Programming/dbgmsg libraries and programs
+###############################################################################
+
+pushd Library && (./Build || true) && popd
+
+pushd get-logging-info && (./Build || true) && popd
+
+pushd test-dbgmsg && (./Build || true) && popd
+
+pushd write-test && (./Build || true) && popd
+
+

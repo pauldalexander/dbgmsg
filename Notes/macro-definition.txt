@@ -1,0 +1,19 @@
+
+
+DBGMSG_PRINTF("<format>", <p1>, <p2>, ...);
+
+                    |
+                    v
+
+#ifdef DBGMSG            
+dbgmsg_printf("%s:%d:%s() <format>", __FILE__, __LINE__, _FUNCTION__, <p1>, <p2>, ...);
+#endif // DBGMSG
+
+
+
+#define DBGMSG_PRINTF(format, ...) \
+dbgmsg_printf("%s:%d:%s() " format, __FILE__, __LINE__, __FUNCTION__, __VA_ARGS__)
+
+
+
+
