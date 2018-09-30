@@ -6,9 +6,5 @@
 
 pushd Library && (./Make-Clean || true) && popd
 
-pushd get-logging-info && (make clean || true) && popd
-
 pushd test-dbgmsg && (./Make-Clean || true) && popd
-
-pushd write-test && (./Make-Clean || true) && popd
 

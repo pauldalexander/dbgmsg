@@ -1,0 +1,6 @@
+
+*.pc
+*.so
+*.o
+*.a
+test-dbgmsg/test-dbgmsg*
